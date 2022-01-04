@@ -1,0 +1,70 @@
+.cabin {
+
+	padding-bottom: 64px;
+
+	@include for-mobile	 {
+		padding-bottom: 16px;
+	}
+
+	& .accordion-body {
+		padding: 16px !important;
+	}
+
+	&__item {
+
+		&-title {
+			@extend .fs-7, .fw-700;
+		}
+
+		&-text {
+			@extend .fs-9, .text-gray, .mt-3;
+		}
+	}
+
+	&__facilities {
+		@extend .mt-7;
+
+		&-item {
+			@extend .fs-11, .text-gray, .mb-5;
+
+			& img {
+				@extend .me-1;
+			}
+		}
+	}
+
+	& hr {
+		@extend .my-7;
+	}
+}
+
+//@include for-mobile {
+//	.detail__accordion {
+//		display: block;
+//	}
+//	.cabin__item {
+//		display: none;
+//	}
+//}
+//
+//@include for-tablet-l {
+//	.detail__accordion {
+//		display: none;
+//	}
+//	.cabin__item {
+//		display: block;
+//	}
+//}
+
+//.detail__cabin {
+//
+//	@include for-mobile {
+//		.accordion-button {
+//			display: none;
+//		}
+//
+//		.accordion-body {
+//			display: block;
+//		}
+//	}
+//}

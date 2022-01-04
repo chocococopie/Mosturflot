@@ -1,0 +1,30 @@
+.auth {
+
+	&__modal {
+		& .input {
+			height: 51px;
+		}
+
+		& .btn.btn-yellow {
+			@extend .p-2;
+		}
+
+		& .lk {
+
+			&__user {
+
+				&-eye {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	&__login {
+		@extend .d-none;
+
+		&.show {
+			@extend .d-block;
+		}
+	}
+}
